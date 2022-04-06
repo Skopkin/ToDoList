@@ -16,7 +16,7 @@ public class ToDoDao {
 		Transaction transaction = session.beginTransaction();
 		session.save(item);
 		transaction.commit();
-		session.close();//
+		session.close();
 	}
 	
 	public List<ToDoItem> showAllTasks() {
